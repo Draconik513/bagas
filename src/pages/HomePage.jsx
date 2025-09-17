@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import ConfettiBackground from "../components/ConfettiBackground";
 import FloatingHearts from "../components/FloatingHearts";
-import heartImage from "../assets/images/heart-animation.jpg"; // ganti file jadi gambar
+import heartImage from "../assets/videos/bubu.mp4"; // ganti file jadi gambar
 
 const HomePage = ({ isIOS }) => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const HomePage = ({ isIOS }) => {
         >
           <p className="text-lg text-pink-600 pt-4">Untuk yang tersayang</p>
           <h1 className="text-4xl font-extrabold bg-gradient-to-r from-pink-600 via-pink-400 to-purple-500 text-transparent bg-clip-text drop-shadow-md">
-            audrey mudita karuna juhanda
+           Bagas Laksmana
           </h1>
         </motion.div>
 
@@ -37,11 +37,16 @@ const HomePage = ({ isIOS }) => {
           className="mb-8"
         >
           <div className="w-64 h-64 mx-auto rounded-full border-4 border-pink-300 shadow-lg overflow-hidden">
-            <img
+            <video
               src={heartImage}
-              alt="Heart Animation"
+              autoPlay
+              loop
+              muted
+              playsInline
+              webkit-playsinline="true"
+              x-webkit-airplay="allow"
               className="w-full h-full object-cover"
-              style={{ transform: "translateZ(0)" }}
+              style={{ transform: 'translateZ(0)' }}
             />
           </div>
         </motion.div>
@@ -55,14 +60,14 @@ const HomePage = ({ isIOS }) => {
           <h2 className="text-3xl font-bold text-pink-600">
             Selamat Ulang Tahun Sayang!
           </h2>
-          <p className="text-xl text-pink-600">🎉 20 september 2025 🎉</p>
+          <p className="text-xl text-pink-600">🎉 18 September 2025  🎉</p>
 
           <div className="mt-8 p-4 bg-white/80 backdrop-blur-sm rounded-lg max-w-md mx-auto border border-pink-200">
             <p className="text-pink-800 italic">
-              "happy birthday sayangg, semoga di umur baru ini kamu makin sehat, makin cantik (meski udah cantik sih dari awal), makin bahagia, dan semua hal baik selalu nyamperin kamu. aku bener bener seneng bisa kenal sama kamu, rasanya tiap hari kaya dapet hadiah gratis dari semesta. semoga ke depan kita makin deket yaa, soalnya aku udah nyaman banget kalo ngobrol sama kamu, malah kadang suka ga sadar senyum senyum sendiri gara gara kamu aku harap di tahun ini kamu nemuin banyak alasan buat ketawa, banyak momen lucu yang bikin hati kamu hangat, dan… kalo boleh jujur, aku juga pengen jadi salah satu alasannya. soalnya serius deh, kamu itu istimewa banget di mata aku"
+              "Untuk pacarku, Bagas Laksmana ... Selamat bertambah usia sayang  💕 makasih yaa kamu selalu nemenin aku, jadi penyemangat buat aku, aku bahagia banget bisa bareng-bareng terus sama kamu 🥰 be happy! Hidup lebih lama yaaa 😘"
             </p>
             <p className="mt-4 text-right text-pink-600 font-medium">
-              - reza pahlevi
+              - Silvi Maulidya
             </p>
           </div>
         </motion.div>

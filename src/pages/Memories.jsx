@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import vidioBunga from "../assets/videos/vidioBungadudu.jpg";
-import fotoKenangan from "../assets/images/couple.mp4";
+import vidioBunga from "../assets/videos/vidioBungadudu.mp4";
+import fotoKenangan from "../assets/images/couple.jpg";
 
 const Memories = ({ isIOS }) => {
   const [flowerBloom, setFlowerBloom] = useState(false);
@@ -20,18 +20,12 @@ const Memories = ({ isIOS }) => {
 
         {/* Bagian Kenangan, sebelumnya <img> → diganti video */}
         <motion.div whileHover={{ scale: isIOS ? 1 : 1.02 }} className="mb-8">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            webkit-playsinline="true"
-            x-webkit-airplay="allow"
+          <img
+            src={fotoKenangan}
+            alt="Kita Berdua"
             className="w-full max-w-md mx-auto rounded-xl shadow-2xl border-4 border-white"
             style={{ transform: "translateZ(0)" }}
-          >
-            <source src={fotoKenangan} type="video/mp4" />
-          </video>
+          />
         </motion.div>
 
         <motion.div
@@ -48,31 +42,53 @@ const Memories = ({ isIOS }) => {
             <p>
               💌 <strong>Maaf ya, Sayang...</strong>
             </p>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
             >
-              Maaf kalau selama ini aku pernah cuek 😞, terlalu sibuk 😔, atau
-              kurang peka sama perasaanmu 😢. Maaf kalau kadang aku bikin kamu
-              kecewa, salah paham, atau merasa sendiri 😓. Aku gak pernah
-              berniat nyakitin kamu 🥺. Semua itu karena aku manusia biasa yang
-              masih belajar mencintaimu dengan lebih baik 🤍.
+              maaf yaa maaf kalau selama ini aku masih belum bisa jadi apa yang
+              kamu mauu, maaf juga untuk semua rasa sakitt, sedih dan juga
+              kecewa yang aku kasih ke kamu, dan maaf juga udah gagal jadi yang
+              kamu mauu. tapi satu hal yang harus kamu tau, aku di sini selalu
+              berusaha buat perbaiki diri aku, ntah itu sifat atau pun sikap aku
+              ke kamu. dan kamu juga harus tau kalo aku di sini sayang banget
+              samaa kamuu.
             </motion.p>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.2 }}
             >
-              Terima kasih sudah sabar, sudah tetap di sini 🫶. Aku akan terus
-              belajar jadi lebih baik lagi... untuk kamu 💗
+              sekali lagi maaf yaa kalo aku belum bisa jadi apa yang kamu mau,
+              akuu juga bakalan berusaha kok tenang ajaa. walaupun kita sering
+              berantem sering beda pendapat selalu permasalahin hal kecill,
+              walaupun aku sering marahh sama kamu sering kesel, bete, badmood
+              atau semacemnya tapi kamu harus percayaa aku sayang bangettttt
+              sama kamuu, ga ada sehari pun dimana aku ga mikirin kamu,
             </motion.p>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.8 }}
             >
-              🙏🏻 Maaf ya, dan makasih karena kamu tetap percaya sama aku.
+              menurut aku ga ada satu pun orang yang bisa ngubah perasaan aku ke
+              kamu, memang ga ada yang sempurna di dunia ini tapi aku selalu
+              berusaha jadi itu di mata kamu, udah berapa ribuan kali nama kamu
+              aku sebut diantara cerita sehari akuu, kamuuu tau? kamuu adalahh
+              bagiann terbaik dalamm hidupku, aku mencintaimu lebih dari dirikuu
+              sendirii
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 2.4 }}
+            >
+              i love you sayangg 💖
             </motion.p>
           </div>
         </motion.div>
@@ -108,11 +124,17 @@ const Memories = ({ isIOS }) => {
               className="rounded-xl overflow-hidden shadow-xl border-4 border-rose-200"
               style={{ backfaceVisibility: "hidden" }}
             >
-              <img
-                src={vidioBunga}
-                alt="Bunga Dudu"
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                webkit-playsinline="true"
+                x-webkit-airplay="allow"
                 className="w-72 h-72 object-cover"
-              />
+              >
+                <source src={vidioBunga} type="video/mp4" />
+              </video>
             </motion.div>
 
             {/* Realistic Blooming Flower */}

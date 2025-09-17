@@ -7,17 +7,25 @@ const SpecialWishes = ({ isIOS }) => {
   const [showHeart, setShowHeart] = useState(false);
 
   const wishes = `
-Sayangku 💖, hari ini adalah momen yang paling indah karena hari ini kamu lahir ke dunia 🎉. Aku ingin berdoa agar kamu selalu dalam lindungan Tuhan 🙏, diberi kesehatan 💪, kekuatan 🛡️, dan kebahagiaan yang tiada akhir 🌈✨.
+Sayanggg.. Aku selalu berdo'a agar kamu senantiasa di beri umur panjang, selalu dalam lindungan Allah, diberi rezeki yang berlimpah, dimudahkan segala urusannya, di beri kesehatan, kekuatan dan kebahagiaan tiada akhir, 
 
-Aku tahu hidup tidak selalu mudah 🌧️, tapi aku ingin kamu tahu bahwa kamu tidak sendiri 🤝. Aku akan selalu mendukungmu 💞, menyemangati kamu 💫, dan menjadi pundakmu saat kamu lelah 😔➡️💆‍♀️.
+Aku tahu hidup tidak selalu mudah, tapi kamu harus inget aku akan selalu ada buat kamu, dukung kamu, semangatin kamu, dan jadi tempat kamu pulang saat kamu merasa sedih dan bahagia
 
-Semoga setiap langkahmu penuh keberkahan 🕌, dan setiap impianmu satu per satu menjadi kenyataan 🌠. Kamu punya hati yang tulus 💓, senyum yang menenangkan 😊, dan jiwa yang cantik luar dalam 🌹. Dunia butuh lebih banyak orang sepertimu 🌍❤️.
+Kamu sangat baik, kamu bijaksana, kamu punya senyum yang menenangkan, kamu juga punya hati yang tulus dan jiwa yang tampan luar dalam 😁🥰
 
-Aku ingin kamu tahu bahwa aku percaya padamu sepenuhnya 🙌. Kamu kuat 💥, kamu hebat 🦋, dan kamu pantas mendapatkan yang terbaik 🏆. Jangan pernah ragukan dirimu sendiri 🙅‍♀️, karena kamu adalah cahaya dalam hidup banyak orang 🌟, termasuk hidupku 💘.
+Aku percaya sama kamu yang,, kamu kuat, kamu hebat, dan kamu pantas mendapatkan yang terbaik. Jangan pernah ragukan dirimu sendiri, karena kamu adalah cahaya dalam hidup banyak orang, termasuk hidupku 🥰🥰🥰
+Aku percaya kedepannya hidup kamu akan jauh lebih baik
 
-Jika suatu hari kamu merasa ragu atau takut 😟, ingatlah doaku ini: Semoga kamu selalu dikelilingi orang-orang baik 👨‍👩‍👧‍👦, rezeki yang cukup 💰, dan cinta yang tulus dari semua arah 💗. Termasuk dariku 🫶.
+Apapun yang terjadi kedepannya, serumit apapun masalahnya,  sebanyak apapun rintangannya,  sebesar apapun kita nantinya, jangan pernah akhiri hubungan yaa... 
 
-Aku cinta kamu ❤️, dan akan selalu mencintaimu 💍.
+Jangan pernah pergi dari masalahnya, tpi cari solusinya
+Jangan lari karena rintangannya, tpi atasi bersama
+Dan jangan cari pengganti,  hanya karena sudah bosan dengan sosoknya, tpi perbaiki hubungannya
+
+Ayoo kita sama-sama lewati prosesnya dan bersyukur serta menerima dengan segala kekurangan dan kelebihan masing2
+
+Aku akan nungguin kamu sampai kamu siappp... 
+Aku cinta kamu sayang...
   `;
 
   return (
@@ -81,7 +89,7 @@ Aku cinta kamu ❤️, dan akan selalu mencintaimu 💍.
               >
                 <div className="text-[12rem] select-none text-center">❤️</div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg">
-                  audrey mudita karuna juhanda 💖
+                  Bagas Laksmana 💖
                 </div>
                 <div className="text-white text-lg text-center mt-4">
                   Hanya kamu di hatiku, sayang 🥹
