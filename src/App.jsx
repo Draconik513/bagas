@@ -142,7 +142,7 @@ function App() {
     
     // Check if countdown is finished
     const checkCountdown = () => {
-      const targetDate = new Date('2025-09-14T00:00:00')
+      const targetDate = new Date('2025-09-18T00:00:00')
       const now = new Date()
       if (now >= targetDate) {
         setCountdownFinished(true)

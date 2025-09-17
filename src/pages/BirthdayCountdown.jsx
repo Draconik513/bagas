@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import MaafAudio from "../assets/videos/birthday-wish.mp4"; // pastikan file ada di folder ini
+import vidiocount from "../assets/videos/birthday.jpg"; // pastikan file ada di folder ini
 
 const BirthdayCountdown = ({ isIOS }) => {
   const [timeLeft, setTimeLeft] = useState({
@@ -13,7 +13,7 @@ const BirthdayCountdown = ({ isIOS }) => {
   const [showAudio, setShowAudio] = useState(false);
   const navigate = useNavigate();
 
-  const targetDate = new Date("2025-09-14T00:00:00");
+  const targetDate = new Date("2025-09-18T00:00:00");
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -50,18 +50,11 @@ const BirthdayCountdown = ({ isIOS }) => {
         </h1>
 
         <div className="mb-8">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            webkit-playsinline="true"
-            x-webkit-airplay="allow"
+          <img
+            src={vidiocount}
+            alt="Birthday Wishes"
             className="w-full max-w-md mx-auto rounded-lg shadow-xl"
-            style={{ transform: "translateZ(0)" }}
-          >
-            <source src={MaafAudio} type="video/mp4" />
-          </video>
+          />
         </div>
 
         <div className="mb-12">
